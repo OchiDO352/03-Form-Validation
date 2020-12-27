@@ -1,6 +1,6 @@
 //! Dark light mode
 const options = {
-    bottom: '600px', // default: '32px'
+    bottom: '32px', // default: '32px'
     right: '32px', // default: '32px'
     left: 'unset', // default: 'unset'
     time: '0.3s', // default: '0.3s'
