@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon3.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+    <title>มจท10_190859.</title>
+</head>
+
+<body>
+
+    <!--========== คํารับรองของผู้ปกครอง ==========-->
+    <div class="container">
+        <div class="row">
+            <center>
+                <br>
+                <h2>คํารับรองของผู้ปกครอง</h2>
+            </center>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <form class="row g-3 needs-validation" novalidate>
+                    <p>เขียนที่</p>
+                    <div class="col-md-6">
+                        <label for="บ้านเลขที่" class="form-label">บ้านเลขที่</label>
+                        <input type="text" class="form-control" id="บ้านเลขที่" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="หมู่ที่" class="form-label">หมู่ที่</label>
+                        <input type="number" class="form-control" id="หมู่ที่" min="1" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="ตำบล" class="form-label">ตำบล</label>
+                        <input type="text" class="form-control" id="ตำบล" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="อำเภอ" class="form-label">อำเภอ</label>
+                        <input type="text" class="form-control" id="อำเภอ" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="จังหวัด" class="form-label">จังหวัด</label>
+                        <input type="text" class="form-control" id="จังหวัด" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="รหัสไปรษณีย์" class="form-label">รหัสไปรษณีย์</label>
+                        <input type="tel" class="form-control" id="รหัสไปรษณีย์" maxlength="5" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="โทรศัพท์" class="form-label">โทรศัพท์</label>
+                        <input type="tel" class="form-control" id="โทรศัพท์" maxlength="10" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="date" class="form-control" required>
+                    </div>
+
+                    <!--========== submit ==========-->
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+                <br>
+                <form class="row g-3 needs-validation" novalidate>
+                    <p>เรื่อง ยินยอมให้นักศึกษาลาพักการศึกษา</p>
+                    <div class="col-md-6">
+                        <label for="ภาคเรียนที่" class="form-label">ภาคเรียนที่</label>
+                        <select id="ภาคเรียนที่" class="form-select" required>
+                            <option selected></option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="ปีการศึกษาที่" class="form-label">ปีการศึกษาที่</label>
+                        <select id="ปีการศึกษาที่" class="form-select" required>
+                            <option selected></option>
+                            <option>2564</option>
+                            <option>2563</option>
+                            <option>2562</option>
+                            <option>2561</option>
+                            <option>2560</option>
+                            <option>2559</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="เรียน คณะบดี" class="form-label">เรียน คณะบดี</label>
+                        <input type="text" class="form-control" id="เรียน คณะบดี" required>
+                    </div>
+
+                    <!--========== ตามที่ ==========-->
+                    <h3>ตามที่</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio 2" id="นาย" required>
+                        <label class="form-check-label" for="นาย">นาย</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio 2" id="นาง" required>
+                        <label class="form-check-label" for="นาง">นาง</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio 2" id="นางสาว" required>
+                        <label class="form-check-label" for="นางสาว">นางสาว</label>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="ชื่อ" class="form-label">ชื่อ</label>
+                        <input type="text" class="form-control" id="ชื่อ" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="นามสกุล" class="form-label">นามสกุล</label>
+                        <input type="text" class="form-control" id="นามสกุล" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="รหัสนักศึกษา" class="form-label">รหัสนักศึกษา</label>
+                        <input type="password" class="form-control" id="รหัสนักศึกษา" maxlength="10" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="โทรศัพท์มือถือ" class="form-label">โทรศัพท์มือถือ</label>
+                        <input type="tel" class="form-control" id="โทรศัพท์มือถือ" maxlength="10" required>
+                    </div>
+
+                    <!--========== หลักสูตร ปริญญาตรี ==========-->
+                    <h3>หลักสูตร ปริญญาตรี</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio 1" id="4 - 5 ปี" required>
+                        <label class="form-check-label" for="4 - 5 ปี">4 - 5 ปี</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio 1" id="4 ปีเทียบเท่าเข้าเรียน(2ปี)"
+                            required>
+                        <label class="form-check-label" for="4 ปีเทียบเท่าเข้าเรียน(2ปี)">4
+                            ปีเทียบเท่าเข้าเรียน(2ปี)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio 1.2" id="ภาคปกติ" required>
+                        <label class="form-check-label" for="ภาคปกติ">ภาคปกติ</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio 1.2" id="ภาคสมทบ" required>
+                        <label class="form-check-label" for="ภาคสมทบ">ภาคสมทบ</label>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="คณะ" class="form-label">คณะ</label>
+                        <select id="คณะ" class="form-select" required>
+                            <option selected></option>
+                            <option>คณะบริหารธุรกิจ</option>
+                            <option>คณะวิทยาศาสตร์</option>
+                            <option>คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+                            <option>คณะศิลปศาสตร์</option>
+                            <option>คณะสถาปัตยกรรมศาสตร์ และการออกแบบสิ่งแวดล้อม</option>
+                            <option>คณะสารสนเทศและการสื่อสาร</option>
+                            <option>คณะผลิตกรรมการเกษตร</option>
+                            <option>คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+                            <option>คณะพัฒนาการท่องเที่ยว</option>
+                            <option>คณะเศรษฐศาสตร์</option>
+                            <option>คณะสัตวศาสตร์และเทคโนโลยี</option>
+                            <option>วิทยาลัยนานาชาติ</option>
+                            <option>วิทยาลัยพลังงานทดแทน</option>
+                            <option>วิทยาลัยบริหารศาสตร์</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="สาขาวิชา" class="form-label">สาขาวิชา</label>
+                        <input type="text" class="form-control" id="สาขาวิชา" required>
+                    </div>
+                    <p>ซึ่งเป็นนักศึกษาในความปกครองของข้าพเจ้ามีความประสงค์จะขอลาพักการศึกษา</p>
+                    <div class="col-md-6">
+                        <label for="ภาคเรียนที่ 2" class="form-label">ภาคเรียนที่</label>
+                        <select id="ภาคเรียนที่ 2" class="form-select" required>
+                            <option selected></option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="ปีการศึกษาที่ 2" class="form-label">ปีการศึกษาที่</label>
+                        <select id="ปีการศึกษาที่ 2" class="form-select" required>
+                            <option selected></option>
+                            <option>2564</option>
+                            <option>2563</option>
+                            <option>2562</option>
+                            <option>2561</option>
+                            <option>2560</option>
+                            <option>2559</option>
+                        </select>
+                    </div>
+                    <div class="form-flsing">
+                        <textarea class="form-control" placeholder="เนื่องจาก" id="floatingTextarea"
+                            required></textarea>
+                    </div>
+
+                    <!--========== ข้าพเจ้า ==========-->
+                    <h3>ข้าพเจ้า</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio 3" id="นาย" required>
+                        <label class="form-check-label" for="นาย">นาย</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio 3" id="นาง" required>
+                        <label class="form-check-label" for="นาง">นาง</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio 3" id="นางสาว" required>
+                        <label class="form-check-label" for="นางสาว">นางสาว</label>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="ชื่อ 2" class="form-label">ชื่อ</label>
+                        <input type="text" class="form-control" id="ชื่อ" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="นามสกุล 2" class="form-label">นามสกุล</label>
+                        <input type="text" class="form-control" id="นามสกุล" required>
+                    </div>
+                    <p>ผู้ปกครองของนักศึกษาดังกล่าวข้างต้น ได้รับทราบการขอลาพักการศึกษาแล้ว
+                        และยินดีให้ปฏิบัติตามความประสงค์ของนักศึกษา</p>
+                    <p>จึงเรียนมาเพื่อโปรดทราบ</p>
+                    <p>ขอแสดงความนับถือ</p>
+                    <div class="mb-3">
+                        <label for="(ลายเซ็น)" class="form-label">ผู้ปกครองของนักศึกษา (ลายเซ็น)</label>
+                        <input class="form-control" type="file" id="(ลายเซ็น)" required accept="image/*">
+                    </div>
+
+                    <!--========== submit ==========-->
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">submit</button>
+                    </div>
+
+                    <!--========== ขั้นตอน ==========-->
+                    <h2>ขั้นตอนการเสนอคําร้องลาพักการศึกษา</h2>
+                    <p>1. นักศึกษากรอกคําร้องขอลาพักการศึกษา <br>
+                        2. เสนอคําร้องต่อหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ <br>
+                        3. เสนอคําร้องต่อผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ (ชั้น 3 อาคารอํานวยยศสุข) <br>
+                        4. เสนอคําร้องต่ออาจารย2ที่ปรึกษา (คณะที่นักศึกษาสังกัด) <br>
+                        5. เสนอคําร้องต่อประธานคณะกรรมการประจําหลักสูตร (คณะที่นักศึกษาสังกัด) <br>
+                        6. เสนอคําร้องต่อคณบดี เพื่ออนุมัติ (คณะที่นักศึกษาสังกัด) <br>
+                        7. นําคําร้องไปชําระเงิน (กองคลัง ชั้น 2 อาคารอิงคศรีกสิการ) <br>
+                        8. นําคําร้องขอลาพักการศึกษา ที่ชําระเงินแล้ว (ยื่นต่อกลุ่มภารกิจทะเบียนเรียนฯ)
+                        เพื่อบันทึกฐานข้อมูลนักศึกษาต่อไป <br>
+                        9. เจ้าหน้าที่ทะเบียนฯ บันทึกลงฐานข้อมูล นักศึกษาสามารถตรวจสอบได้ในวันต่อไป
+                    </p>
+
+                    <!--========== ย้อนกลับ ==========-->
+                    <br>
+                    <center><a href="index2.html"><button type="button" class="btn btn-primary">ย้อนกลับ</button></a>
+                    </center>
+                </form>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!--!========== script ==========-->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
